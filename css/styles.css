@@ -72,9 +72,13 @@ nav {
 
 #posts {
     max-width: 47em;
-    padding: 10em 2em;
+    padding: 15em 2em;
     margin-left: auto;
     margin-right: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
 
     article {
         display: flex;
@@ -96,6 +100,9 @@ nav {
             padding: 1em;
             background-color: var(--surface-variant);
             border-radius: var(--border-radius);
+
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
