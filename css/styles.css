@@ -10,6 +10,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-margin-top: 2em;
 }
 
 body {
@@ -84,6 +85,26 @@ nav {
         display: flex;
         flex-direction: column;
         gap: 1em;
+
+        button {
+            align-self: flex-start;
+            height: 3em;
+            width: 3em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: transparent;
+            border: none;
+            color: var(--text-weak);
+
+            cursor: pointer;
+
+            i {
+                font-size: 1.5em;
+            }
+        }
 
         img {
             max-width: 100%;
