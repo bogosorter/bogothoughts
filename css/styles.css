@@ -36,7 +36,7 @@ nav {
 
     height: 100vh;
     width: 100%;
-    padding: 15em 5em;
+    padding: 20em 10em;
 
     h1 {
         font-size: 4em;
@@ -49,7 +49,7 @@ nav {
         bottom: 0;
         right: 0;
 
-        max-width: 25em;
+        max-width: 20em;
 
         /* reflect horizontally */
         transform: scaleX(-1);
