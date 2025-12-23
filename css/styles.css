@@ -94,6 +94,10 @@ nav {
                 aspect-ratio: 16/9;
                 object-fit: cover;
             }
+
+            &.outline {
+                border: 1px solid var(--text-weak);
+            }
         }
 
         .metadata {
@@ -103,6 +107,22 @@ nav {
 
             display: flex;
             justify-content: space-between;
+        }
+
+        .post {
+            padding: 1em;
+            background-color: var(--surface-variant);
+            border-radius: var(--border-radius);
+
+            h1 {
+                font-size: 1.2em;
+                font-weight: normal;
+                color: var(--accent);
+            }
+
+            p {
+                text-align: justify;
+            }
         }
     }
 }
