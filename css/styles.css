@@ -122,6 +122,12 @@ nav {
 
             p {
                 text-align: justify;
+                line-height: 1.4em;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
             }
         }
     }
