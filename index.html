@@ -23,7 +23,36 @@
                 <p>whatever comes to mind</p>
                 <img src="./images/cover.png" alt="">
             </section>
-            <section id="posts">
+            <section id="msort">
+                <article id="enshittification">
+                    <button class="post-link"><i class="bi bi-link-45deg"></i></button>
+                    <div class="metadata">
+                        <span>
+                            24/12/2025
+                        </span>
+                        <span>
+                            <i class="bi bi-globe2"></i>
+                            en
+                        </span>
+                    </div>
+                    <div class="post">
+                        <p>There is much to be said about a language whose "hello, world" is only taught in the eighth week, and I'm not the right person to talk about it, but one must admit that there is an elegancy in Haskell that I have not yet found in other languages. Just look at this merge sort!</p>
+<pre><code class="language-haskell">sort :: [Int] -> [Int]
+sort [] = []
+sort [x] = [x]
+sort list = merge (sort left) (sort right)
+    where left = take half list
+          right = drop half list
+          half = length list `div` 2
+
+merge :: [Int] -> [Int] -> [Int]
+merge [] right = right
+merge left [] = left
+merge (x:xs) (y:ys)
+    | x <= y = x : merge xs (y:ys)
+    | otherwise = y : merge (x:xs) ys</code></pre>
+                    </div>
+                </article>
                 <article id="carts">
                     <button class="post-link"><i class="bi bi-link-45deg"></i></button>
                     <img src="./images/carts.jpg" alt="">

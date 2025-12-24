@@ -157,5 +157,9 @@ nav {
                 text-decoration: none;
             }
         }
+
+        pre {
+            padding-left: 4em;
+        }
     }
 }
