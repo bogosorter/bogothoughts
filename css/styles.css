@@ -160,6 +160,7 @@ nav {
 
         pre {
             padding-left: 4em;
+            overflow-y: scroll;
         }
     }
 }
