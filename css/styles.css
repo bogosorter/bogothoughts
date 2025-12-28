@@ -130,8 +130,7 @@ nav {
             justify-content: space-between;
         }
 
-        .post {
-            padding: 1em;
+        .post, .caption {
             background-color: var(--surface-variant);
             border-radius: var(--border-radius);
 
@@ -156,6 +155,14 @@ nav {
                 color: var(--accent);
                 text-decoration: none;
             }
+        }
+
+        .post {
+            padding: 1em;
+        }
+
+        .caption {
+            padding: 0 1em;
         }
 
         pre {
