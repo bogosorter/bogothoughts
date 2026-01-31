@@ -1,0 +1,52 @@
+- id: melancolic
+  metadata:
+    location: Aljezur
+    credits: Mr. M
+  image: melancolic.jpg
+  caption: This image has always fascinated me.
+
+- id: townscaper
+  metadata:
+    location: Townscaper
+  caption: This [game](https://oskarstalberg.com/Townscaper) feels like a living piece of art.
+
+- id: locked
+  metadata:
+    date: 24/12/2025
+    language: pt
+  post: |
+    Não há, caro leitor, melhor país que Portugal para
+    se ficar fechado fora de casa. Declaro-o sem
+    qualquer leviandade - estou inteiramente ciente do
+    peso desta afirmação e integralmente preparado para
+    a defender com base apenas nos factos.
+
+    Digo-o porque não há outro lugar no mundo em que,
+    ficando-se preso fora de casa já depois das onze da
+    noite, no silêncio de uma aldeia minhota, sem
+    carteira, telemóvel, ou chaves do carro, a vizinha
+    do lado esteja ainda acordada e nos abra a porta.
+    Ou, mesmo que haja, essa hipotética vizinha num
+    hipotético país certamente não terá feito a matança
+    do porco nessa tarde. Ou, supondo nós que isto podia
+    acontecer num outro país qualquer, a vizinha não se
+    lembraria de um serralheiro que, já estando deitado,
+    se levantaria, dispor-se-ia a trepar o muro e nos
+    abriria a porta, recusando-se a receber pagamento.
+
+    Dirá agora o leitor que conhece bem o país X, e que
+    decerto o país X tem também gente boa que faz a
+    matança do porco e acolhe os vizinhos, que o país X
+    tem também serralheiros que se movem pela bondade, e
+    que eu exagero. Ao que eu respondo: tudo isso poderá
+    ser verdade, mas no país X a vizinha não nos dá
+    rojões e batatas para fritar, nem febras para o
+    almoço, nem nos faz prometer que voltaremos no dia
+    seguinte para testemunhar o enchimento dos
+    chouriços, chouriças, chouriças de sangue, chouriças
+    de massa e chouriças de ossos.
+
+    Concluindo, caro leitor, muito nos podemos queixar
+    do nosso país, e com certeza razões para isso
+    haverá, mas que fique bem assente que não há melhor
+    sítio que Portugal para ficar preso fora de casa.

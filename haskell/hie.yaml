@@ -1,0 +1,7 @@
+cradle:
+  cabal:
+    - path: "./Main.hs"
+      component: "haskell:exe:haskell"
+
+    - path: "./Blog.hs"
+      component: "haskell:exe:haskell"

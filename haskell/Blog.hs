@@ -1,10 +1,12 @@
-{-# LANGUAGE DeriveGeneric, LambdaCase #-}
+{-# LANGUAGE DeriveGeneric, LambdaCase, DeriveAnyClass #-}
+{-# OPTIONS_GHC -Wno-deriving-defaults #-}
 
 module Blog (Blog, Post(..), Metadata, Image, Markdown, parseBlog) where
 
 import Data.Yaml
-import GHC.Generics
 import Data.Aeson (genericParseJSON, defaultOptions, Options (omitNothingFields, fieldLabelModifier))
+import qualified Data.ByteString as BS
+import GHC.Generics
 
 type Blog = [Post]
 
@@ -37,5 +39,5 @@ instance FromJSON Metadata where
 newtype Image = Image String deriving (Generic, FromJSON)
 newtype Markdown = Markdown String deriving (Generic, FromJSON)
 
-parseBlog :: String -> IO Blog
-parseBlog path = decodeFileThrow path :: IO Blog
+parseBlog :: BS.ByteString -> IO Blog
+parseBlog = decodeThrow
