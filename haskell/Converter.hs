@@ -26,24 +26,24 @@ metadataToHtml (Just metadata) = div_ [class_ "metadata"] $ do
 
 dateToHtml :: Maybe String -> Html()
 dateToHtml Nothing = return ()
-dateToHtml (Just d) = p_ [class_ "date"] (toHtml (pack d))
+dateToHtml (Just d) = span_ [class_ "date"] (toHtml (pack d))
 
 languageToHtml :: Maybe String -> Html()
 languageToHtml Nothing = return ()
-languageToHtml (Just lang) = p_ [class_ "language"] (toHtml (pack lang))
+languageToHtml (Just lang) = span_ [class_ "language"] (toHtml (pack lang))
 
 locationToHtml :: Maybe String -> Html()
 locationToHtml Nothing = return ()
-locationToHtml (Just loc) = p_ [class_ "location"] (toHtml (pack loc))
+locationToHtml (Just loc) = span_ [class_ "location"] (toHtml (pack loc))
 
 creditsToHtml :: Maybe String -> Html()
 creditsToHtml Nothing = return ()
-creditsToHtml (Just cred) = p_ [class_ "credits"] (toHtml (pack cred))
+creditsToHtml (Just cred) = span_ [class_ "credits"] (toHtml (pack cred))
 
 imageToHtml :: Maybe Image -> Html()
 imageToHtml Nothing = return ()
-imageToHtml (Just (Image src)) = img_ [src_ (pack src)]
+imageToHtml (Just (Image src)) = img_ [src_ (pack ("./images/" ++ src))]
 
 captionToHtml :: Maybe Markdown -> Html()
 captionToHtml Nothing = return ()
-captionToHtml (Just (Markdown md)) = toHtmlRaw (commonmarkToHtml [] [] (pack md))
+captionToHtml (Just (Markdown md)) = div_ [class_ "caption"] $ toHtmlRaw (commonmarkToHtml [] [] (pack md))

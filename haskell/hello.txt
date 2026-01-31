@@ -8,6 +8,7 @@
 - id: townscaper
   metadata:
     location: Townscaper
+  image: townscaper.jpg
   caption: This [game](https://oskarstalberg.com/Townscaper) feels like a living piece of art.
 
 - id: locked
