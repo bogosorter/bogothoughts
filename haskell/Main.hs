@@ -2,7 +2,6 @@
 
 import Blog
 import Converter
-import Data.List (elemIndex)
 import Data.Text (pack, breakOn, length)
 import Prelude hiding (length)
 import qualified Data.ByteString as BS
@@ -15,7 +14,7 @@ main = do
 
     -- Generate HTML and replace fill the template
     template <- readFile "template.html"
-    writeFile "output.html" (fillTemplate template (renderBlog blog))
+    putStr (fillTemplate template (renderBlog blog))
 
 renderBlog :: Blog -> String
 renderBlog = concatMap postToHtml

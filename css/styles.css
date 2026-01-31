@@ -16,7 +16,7 @@
 body {
     background-color: var(--surface);
     color: var(--text);
-    font-family: 'Droid Sans Mono', 'monospace', monospace;
+    font-family: "Droid Sans Mono", "monospace", monospace;
     margin: 0;
 }
 
@@ -44,7 +44,7 @@ nav {
         font-weight: normal;
         margin-bottom: 0;
     }
-    
+
     img {
         position: absolute;
         bottom: 0;
@@ -76,7 +76,7 @@ nav {
     padding: 15em 2em;
     margin-left: auto;
     margin-right: auto;
-    
+
     display: flex;
     flex-direction: column;
     gap: 10em;
@@ -130,7 +130,8 @@ nav {
             justify-content: space-between;
         }
 
-        .post, .caption {
+        .body,
+        .caption {
             background-color: var(--surface-variant);
             border-radius: var(--border-radius);
 
@@ -157,7 +158,7 @@ nav {
             }
         }
 
-        .post {
+        .body {
             padding: 1em;
         }
 

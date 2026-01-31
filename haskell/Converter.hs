@@ -15,6 +15,7 @@ postToHtml post = unpack (renderText html)
             imageToHtml (image post)
             metadataToHtml (metadata post)
             captionToHtml (caption post)
+            bodyToHtml (body post)
 
 metadataToHtml :: Maybe Metadata -> Html ()
 metadataToHtml Nothing = return ()
@@ -47,3 +48,7 @@ imageToHtml (Just (Image src)) = img_ [src_ (pack ("./images/" ++ src))]
 captionToHtml :: Maybe Markdown -> Html()
 captionToHtml Nothing = return ()
 captionToHtml (Just (Markdown md)) = div_ [class_ "caption"] $ toHtmlRaw (commonmarkToHtml [] [] (pack md))
+
+bodyToHtml :: Maybe Markdown -> Html()
+bodyToHtml Nothing = return ()
+bodyToHtml (Just (Markdown md)) = div_ [class_ "body"] $ toHtmlRaw (commonmarkToHtml [] [] (pack md))

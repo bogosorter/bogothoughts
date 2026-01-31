@@ -15,7 +15,7 @@ data Post = Post {
     metadata :: Maybe Metadata,
     image :: Maybe Image,
     caption :: Maybe Markdown,
-    content :: Maybe Markdown
+    body :: Maybe Markdown
 } deriving Generic
 
 instance FromJSON Post where

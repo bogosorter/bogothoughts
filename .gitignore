@@ -2,3 +2,4 @@ Convert
 *.hi
 *.o
 haskell/dist-newstyle
+output.html
