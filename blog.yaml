@@ -1,19 +1,19 @@
 - id: melancolic
   metadata:
-    - location: Aljezur
-    - credits: Mr. M
+    location: Aljezur
+    credits: Mr. M
   image: melancolic.jpg
   caption: This image has always fascinated me.
 
 - id: townscaper
   metadata:
-    - location: Townscaper
+    location: Townscaper
   caption: This [game](https://oskarstalberg.com/Townscaper) feels like a living piece of art.
 
 - id: locked
   metadata:
-    - date: 24/12/2025
-    - language: pt
+    date: 24/12/2025
+    language: pt
   post: |
     Não há, caro leitor, melhor país que Portugal para
     se ficar fechado fora de casa. Declaro-o sem
