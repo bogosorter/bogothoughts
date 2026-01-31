@@ -1,4 +1,5 @@
 import Blog
+import Converter
 import qualified Data.ByteString as BS
 
 main :: IO ()
@@ -10,5 +11,5 @@ main = do
 printPosts :: Blog -> IO ()
 printPosts [] = return ()
 printPosts (post:posts) = do
-    putStrLn (postId post)
+    putStrLn (postToHtml post)
     printPosts posts

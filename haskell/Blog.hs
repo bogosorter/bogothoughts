@@ -1,7 +1,7 @@
 {-# LANGUAGE DeriveGeneric, LambdaCase, DeriveAnyClass #-}
 {-# OPTIONS_GHC -Wno-deriving-defaults #-}
 
-module Blog (Blog, Post(..), Metadata, Image, Markdown, parseBlog) where
+module Blog (Blog, Post(..), Metadata(..), Image(..), Markdown(..), parseBlog) where
 
 import Data.Yaml
 import Data.Aeson (genericParseJSON, defaultOptions, Options (omitNothingFields, fieldLabelModifier))
